@@ -1,34 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Blog preview card</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Frontend Mentor | Blog preview card</title>
+    <!-- Link of Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- Link of Local CSS -->
+    <link
+      rel="stylesheet"
+      href="/blog_preview/blog-preview-card-main/style.css"
+    />
+  </head>
+  <body>
+    <div class="container d-flex justify-content-center">
+      <div class="row">
+        <div class="col-12 col-md-6 p-5">
+          <div
+            class="card"
+            style="
+              width: 25rem;
+              height: auto;
+              border-radius: 25px;
+              box-shadow: 5px 8px 5px #000100;
+            "
+          >
+            <img
+              style="border-radius: 25px"
+              src="./assets/images/illustration-article.svg"
+              class="card-img-top p-3"
+              alt="main-img"
+            />
+            <div class="card-body">
+              <a
+                style="
+                  background-color: hsl(47, 88%, 66%);
+                  border: none;
+                  color: hsl(0, 0%, 42%);
+                "
+                href="#"
+                class="btn btn-primary"
+                >Learning</a
+              >
+              <p class="h4 fw-light mt-2">Published at 29 January 2025</p>
 
-  Learning
-
-  Published 21 Dec 2023
-
-  HTML & CSS foundations
-
-  These languages are the backbone of every website, defining structure, content, and presentation.
-
-  Greg Hooper
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+              <h3 class="fw-bold">HTML & CSS Foundations</h3>
+              <p>
+                These languages are the backbone of every website, defining
+                structure, content and presentation.
+              </p>
+              <div class="dev-container d-flex align-items-center gap-3">
+                <div class="dev-avator">
+                  <img
+                    style="height: 40px; width: 40px"
+                    src="./assets/images/image-avatar.webp "
+                    alt="dev-photo"
+                  />
+                </div>
+                <div class="dev-name">Greg Hooper</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
